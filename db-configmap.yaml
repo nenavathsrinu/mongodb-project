@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-config
+data:
+  database_url: mongodb-service
+
+# This ConfigMap provides the database URL for the MongoDB service.
+# You can reference this ConfigMap in your application deployments to connect to the database.
